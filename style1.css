@@ -1,162 +1,71 @@
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #fff8fa;
-    color: #49333b;
+    background: #fffafa;
+    color: #444;
 }
 
-/* Navbar */
+/* NAVBAR */
 header {
-    background: #f5cbd9;
-    padding: 20px 8%;
+    background: #f8b6cb;
+    padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h2 {
-    color: #a33f68;
+    color: #a52a5c;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
-    color: #49333b;
-    margin-left: 20px;
+    color: #7a2347;
     font-weight: bold;
 }
 
-/* Hero */
+nav a:hover {
+    color: white;
+}
+
+/* HERO */
 .hero {
-    min-height: 350px;
-    background: #f9dce6;
-    display: flex;
-    align-items: center;
-    padding: 50px 10%;
-}
-
-.hero h1 {
-    font-size: 38px;
-    color: #a33f68;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-.btn {
-    background: #b84f79;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 20px;
-}
-
-/* Produk */
-.produk {
-    padding: 50px 8%;
+    background: linear-gradient(120deg, #ffd6e4, #fff0f5);
     text-align: center;
+    padding: 35px 15px;
 }
 
-.produk h2 {
-    color: #a33f68;
-    font-size: 28px;
+.hero-content {
+    max-width: 600px;
+    margin: auto;
 }
 
-.subjudul {
-    margin: 10px 0 30px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px #e8cbd5;
-}
-
-.card img {
+/* GAMBAR AWAL */
+.hero img {
     width: 100%;
-    border-radius: 10px;
-}
-
-.card h3 {
-    margin: 12px 0;
-}
-
-.card p {
-    color: #888;
-}
-
-.card h4 {
-    color: #b84f79;
-    margin: 12px;
-}
-
-.card a {
-    display: inline-block;
-    background: #b84f79;
-    color: white;
-    padding: 9px 15px;
-    text-decoration: none;
+    max-width: 250px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
     border-radius: 15px;
-    font-size: 13px;
-}
-
-/* Tentang */
-.tentang {
-    background: #f9dce6;
-    padding: 45px 10%;
-    text-align: center;
-}
-
-.tentang h2 {
-    color: #a33f68;
-    margin-bottom: 15px;
-}
-
-.tentang p {
-    line-height: 1.8;
-}
-
-/* Footer */
-footer {
-    background: #49333b;
-    color: white;
-    padding: 30px;
-    text-align: center;
-    line-height: 2;
-}
-
-/* Tampilan HP */
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav a {
-        margin: 5px;
-        font-size: 13px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
